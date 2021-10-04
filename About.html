@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="with=device-width, initial-scale=1.0">
+<title>Ollies Films - About Me</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/1af1223cc4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<section class="sub-header">
+  <nav>
+    <a href="index.html"><img src="images/logo.png"></a>
+    <div class="nav-links" id="navLinks">
+      <i class="fa fa-times" onclick="hideMenu()"></i>
+         <ul>
+           <li><a href="index.html">HOME</a></li>
+           <li><a href="About.html">ABOUT ME</a></li>
+           <li><a href="MarvelTakeover.html">MARVEL TAKEOVER</a></li>
+           <li><a href="RecentReviews.html">RECENT REVIEWS</a></li>
+           <li><a href="Favourites.html">OLLIES FAVOURITES</a></li>
+           <li><a href="Contact.html">CONTACT</a></li>
+        </ul>
+       </div>
+    <i class="fa fa-bars" onclick="showMenu()"></i>
+  </nav>
+<h1>About Me</h1>
+</section>
+
+<!---About me Content----->
+<section class="About-me">
+  <div class="row">
+    <div class="About-col">
+      <h1>Who am I?</h1>
+      <p> Hi there, my name is Ollie Conwell, I am 21 years old, currently studying a Bachelor of Media and Communication Course.
+        <br><br>Ever since I can remember I have always shown a passion for cinema, so much so that I even worked at one for 4 years.
+        <br><br>Watching films allow me to escape, relax, laugh, and motivate me. I have created this website as a personal blog, where I upload
+        a variety of different reviews and recommendations. I hope you enjoy and find a film to watch!
+        <br><br>Some of my favourite films: The Shining, Blade Runner 2049, Akira, Back to the Future, Prisoners, 2001: A Space Odyssey.
+        Read more about these in the 'Ollies Favourites' section at the top of the page.
+        <br><br>Some of my favourite directors: Denis Villeneuve, Stanley Kubrick, Ari Aster, Quentin Tarantino, Christopher Nolan.
+        <br><br>Some of my favourite genre's: Thriller, Sci-Fi, Animation, Comedy.<p>
+
+      </div>
+     <div class="About-col">
+       <img src="images/ollie.jpg"
+    </div>
+
+</section>
+
+<!---footer----->
+<section class="footer">
+  <h4>Ollie's Films - 2021</h4>
+  <p>Made by Oliver Conwell<br>Template by EasyTutorials</p>
+
+</section>
+
+
+<!---Javascript for the Toggle Menu----->
+<script>
+
+var navLinks =document.getElementById("navLinks");
+       function showMenu(){
+         navLinks.style.right = "0";
+       }
+      function hideMenu(){
+          navLinks.style.right = "-200px";
+       }
+</script>
+
+</body>
+</html>
